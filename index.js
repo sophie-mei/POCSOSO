@@ -9,8 +9,12 @@ const corsOptions = {origin: process.env.URL || '*'};
 app.use(cors(corsOptions));
 app.use(json());
 
+app.get('/pole_emplois', (req,res) => {
+    res.json("");
+})
+
 app.get('/consentement_export', (req,res) => {
-    res.json("Hello");
+    res.json("");
 })
 
 app.get('/passeport_de_competence/:personne', async (req,res) => {
