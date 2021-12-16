@@ -10,11 +10,11 @@ app.use(cors(corsOptions));
 app.use(json());
 
 app.get('/pole_emplois', (req,res) => {
-    res.json("");
+    res.json();
 })
 
 app.get('/consentement_export', (req,res) => {
-    res.json("");
+    res.json();
 })
 
 app.get('/passeport_de_competence/:personne', async (req,res) => {
